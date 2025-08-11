@@ -88,3 +88,6 @@ print(round(x, 2))      # یعنی تا دو رقم اعشار گرد کن
 
 y = -78.21
 print(abs(y))
+
+z = 45
+print(pow(z , 8))
