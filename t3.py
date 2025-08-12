@@ -7,12 +7,14 @@
 
 # *******************************************************************
 # مثال بالارو بصورت زیر هم میشه حلش کرد:
-x = int(input("Enter a number: "))
-temp = x % 10
-print(temp)
-x = x // 10
-temp = x % 10
-print(temp)
-x = x // 10
-temp = x % 10
-print(temp)
+# x = int(input("Enter a number: "))
+# temp = x % 10
+# print(temp)
+# x = x // 10
+# temp = x % 10
+# print(temp)
+# x = x // 10
+# temp = x % 10
+# print(temp)
+
+# *******************************************************************

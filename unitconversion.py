@@ -1,8 +1,8 @@
-import os
+import os, math
 while True:
     os.system('cls' if os.name == 'nt' else 'clear')
     print("************ Main Page ************")
-    print("1- Kilogram/gram \n2- Meter/Centimeter")
+    print("1- Kilogram/Gram \n2- Meter/Centimeter\n3- Degree/Radian")
     try:
         n = int(input("Choose a conversion: ").strip())
         if n == 1:
@@ -57,6 +57,35 @@ while True:
                     centimeter = float(
                         input("write the number in centimeter: ").strip())
                     print(f"your number in meter is {centimeter/100}")
+                    # print(input("\nPress any key to exit..."))
+                    break
+                except:
+                    print(
+                        "Oh :(( the number/character you entered is out of our support")
+            else:
+                print("you choose wrong number :(\nyou return to page one")
+                continue
+        elif n == 3:
+            # degree/radian
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print("************ Second Page ************")
+            print("1- Degree To Radian")
+            print("2- Radian To Degree")
+            k = int(input("Choose a conversion: ").strip())
+            if k == 1:
+                try:
+                    Degree = float(input("write the number in Degree: ").strip())
+                    print(f"your number in Radian is {(Degree*math.pi)/180}")
+                    # print(input("\nPress any key to exit..."))
+                    break
+                except:
+                    print(
+                        "Oh :(( the number/character you entered is out of our support")
+            elif k == 2:
+                try:
+                    radian = float(
+                        input("write the number in radian: ").strip())
+                    print(f"your number in degree is {(radian*180)/math.pi}")
                     # print(input("\nPress any key to exit..."))
                     break
                 except:
