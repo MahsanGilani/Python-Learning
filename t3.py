@@ -29,11 +29,18 @@
 # print(f"Mohit dayereh barabar ast ba: {round(mohit,2)}\nmasahat barabar ast ba: {round(masahat,2)}")
 
 # *******************************************************************
-"""
-    برنامه ای بنویسید که یک عدد از کاربر گرفته و مربع)توان دوم(
-    و مکعب)توان سوم( آن را چاپ کند.
-"""
-number = int(input("Enter your number: "))
-print(f"Tavan 2: {pow(number, 2)}\nTavan 3: {pow(number, 3)}")
+# """
+#     برنامه ای بنویسید که یک عدد از کاربر گرفته و مربع)توان دوم(
+#     و مکعب)توان سوم( آن را چاپ کند.
+# """
+# number = int(input("Enter your number: "))
+# print(f"Tavan 2: {pow(number, 2)}\nTavan 3: {pow(number, 3)}")
 
 # *******************************************************************
+"""
+    برنامه ای بنویسید که دو عدد از کاربر گرفته، اول ی را به توان
+    دومی برساند و نتیجه را چاپ کند. 
+"""
+x = int(input("Enter x: "))
+y = int(input("Enter y: "))
+print(pow(x, y))
