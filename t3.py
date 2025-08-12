@@ -18,3 +18,12 @@
 # print(temp)
 
 # *******************************************************************
+"""
+    برنامه ای بنویسید که شعاع دایره را از کاربر گرفته و محیط و
+    مساحت دایره را حساب کند. 
+"""
+import math
+r = int(input("Enter Shoa: "))
+masahat = math.pi * r * r
+mohit = 2 * r * math.pi
+print(f"Mohit dayereh barabar ast ba: {round(mohit,2)}\nmasahat barabar ast ba: {round(masahat,2)}")
