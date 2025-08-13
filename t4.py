@@ -52,9 +52,48 @@
 # print(f"{{x}} is {x}")
 # print(f"{{x}} is {{{x}}}")
 # # ************************************************************************************
-from datetime import datetime
+# from datetime import datetime
 
-today = datetime.today()
-print(today)
-print(f"{today:%Y/%m/%d}")
-print(f"{today:%Y/%B/%d  %H:%M}")
+# today = datetime.today()
+# print(today)
+# print(f"{today:%Y/%m/%d}")
+# print(f"{today:%Y/%B/%d  %H:%M}")
+
+# # ************************************************************************************
+# # برای شمردن اینکه یک کاراکتر چند بار در متن زیر بکار رفته است، از تابع کانت استفاده میکنیم
+# sentence = "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair. Role together range line. Government first policy daughter."
+
+# character = input("Enter a character: ")
+
+# print(sentence.count(character))
+# # ************************************************************************************
+# # میخوایم یه جمله از کاربر بگیریم و بهش بگیم آخرین کلمه توی جمله ات فلان کلمه هستش
+# sentence = input("write your sentence: ")
+# sentence = (sentence.strip()).split(' ')
+# print("----------------------------------------------------------------")
+# print(f"your last word is : {sentence[len(sentence)-1]}")
+
+# -----------------------------------------
+# # راه حل سبزلرن برای مثال بالا:
+# sentence = input("write your sentence: ").strip()
+# i = sentence.rfind(" ")         # میره آخرین اسپیس رو از سمت راست پیدا میکنه، و آخرین کلمه دقیقا بعد از اون اسپیس هستش
+# print(sentence[i+1:])
+
+# # ************************************************************************************
+# # میخوایم دوتا رشته بگیریم و بعد بررسی کنیم که آیا رشته دوم در رشته اول بکار رفته یا نه
+# s1 = input("Enter a string: ")
+# s2 = input("Enter a string: ")
+# print(s2 in s1)
+
+# # ************************************************************************************
+
+# # کاربر یه متنی رو وارد کرده و حالا میخوایم تمامی اسپیس ها و چیزایی که وارد کرده رو از بین ببریم
+# s = input("Enter a string: ")
+# print(s.replace(' ','').replace('\t',''))           #یونیکدهای اسپیس و تب متفاوتن
+
+# # ************************************************************************************
+# # میخوایم از کاربری شماره تلفنشو بگیریم و بعد صفر اولشو پاک کنیم
+# phone = input("Enter a phoneNumber: ")
+# print(phone.lstrip('0'))
+
+# # ************************************************************************************
