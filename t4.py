@@ -67,8 +67,14 @@
 
 # print(sentence.count(character))
 # # ************************************************************************************
-# میخوایم یه جمله از کاربر بگیریم و بهش بگیم آخرین کلمه توی جمله ات فلان کلمه هستش
-sentence = input("write your sentence: ")
-sentence = (sentence.strip()).split(' ')
-print("----------------------------------------------------------------")
-print(f"your last word is : {sentence[len(sentence)-1]}")
+# # میخوایم یه جمله از کاربر بگیریم و بهش بگیم آخرین کلمه توی جمله ات فلان کلمه هستش
+# sentence = input("write your sentence: ")
+# sentence = (sentence.strip()).split(' ')
+# print("----------------------------------------------------------------")
+# print(f"your last word is : {sentence[len(sentence)-1]}")
+
+# -----------------------------------------
+# # راه حل سبزلرن برای مثال بالا:
+# sentence = input("write your sentence: ").strip()
+# i = sentence.rfind(" ")         # میره آخرین اسپیس رو از سمت راست پیدا میکنه، و آخرین کلمه دقیقا بعد از اون اسپیس هستش
+# print(sentence[i+1:])
