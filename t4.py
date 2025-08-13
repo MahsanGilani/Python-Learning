@@ -60,10 +60,15 @@
 # print(f"{today:%Y/%B/%d  %H:%M}")
 
 # # ************************************************************************************
-# برای شمردن اینکه یک کاراکتر چند بار در متن زیر بکار رفته است، از تابع کانت استفاده میکنیم
-sentence = "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair. Role together range line. Government first policy daughter."
+# # برای شمردن اینکه یک کاراکتر چند بار در متن زیر بکار رفته است، از تابع کانت استفاده میکنیم
+# sentence = "American whole magazine truth stop whose. On traditional measure example sense peace. Would mouth relate own chair. Role together range line. Government first policy daughter."
 
-character = input("Enter a character: ")
+# character = input("Enter a character: ")
 
-print(sentence.count(character))
+# print(sentence.count(character))
 # # ************************************************************************************
+# میخوایم یه جمله از کاربر بگیریم و بهش بگیم آخرین کلمه توی جمله ات فلان کلمه هستش
+sentence = input("write your sentence: ")
+sentence = (sentence.strip()).split(' ')
+print("----------------------------------------------------------------")
+print(f"your last word is : {sentence[len(sentence)-1]}")
