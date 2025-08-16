@@ -113,7 +113,15 @@
 
 # # ************************************************************************************
 
-num = input("Enter your phonenumber: ")
-print(num.isdigit())
+# num = input("Enter your phonenumber: ")
+# print(num.isdigit())
 
+# # ************************************************************************************
+
+s = input("Enter a sentence: ")
+sentence = s.count('.') + s.count('?') + s.count(';') + s.count('!')
+words = s.count(' ') + 1            # چون کلمه ی آخر دیگه بعدش هیچ اسپیسی وجود نداره، درنتیجه بعلاوه یک میکنیم
+characters = len(s)
+letters = characters - (s.count('.') + s.count('?') + s.count(';') + s.count('!') + s.count(',') + s.count('-') + s.count(' '))
+print(f"Numbers of Sentence: {sentence}\nNumber of words: {words}\nNumber of character: {characters}\nNumber of letters: {letters}")
 # # ************************************************************************************
