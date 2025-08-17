@@ -8,3 +8,6 @@ Q = {12, 18, 6, 10, 4, 16, 2, 8, 14}
 print(P-Q)
 print(P.difference(Q))
 
+print(P | Q)        # اجتماع
+print(P.union(Q))
+
