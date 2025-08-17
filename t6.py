@@ -11,3 +11,5 @@ print(P.difference(Q))
 print(P | Q)        # اجتماع
 print(P.union(Q))
 
+print(P & Q)        # اشتراک
+print(P.intersection(Q))
